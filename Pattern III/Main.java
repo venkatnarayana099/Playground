@@ -1,0 +1,35 @@
+#include<iostream>
+int main()
+{
+  int a,b=1,i,j,c;
+  std::cin>>a;
+  for(i=1;i<=a;i++)
+  {
+     for(j=1;j<=(2*i)-1;j++)
+     {
+       if(j%2==0)
+         std::cout<<"*";
+       else
+       {
+         std::cout<<b;
+       }
+     }
+    c=b;
+    b=b+1;
+     std::cout<<"\n";
+  }
+  for(i=1;i<=a;i++)
+  {
+     for(j=1;j<=2*c-1;j++)
+     {
+       if(j%2==0)
+         std::cout<<"*";
+       else
+       {
+         std::cout<<c;
+       }
+     }
+     c=c-1;
+     std::cout<<"\n";
+  }
+}
